@@ -101,7 +101,7 @@ try {
 	}
 
 	// this will move files out of the upload directory in to the recycle bin of that same directory
-	foreach (new DirectoryIterator($_GET["folderPath"]) as $file) {
+	foreach (new DirectoryIterator($folderPath) as $file) {
 		if($file->isDot()) continue;
 		rename($folderPath."/".$file->getFilename(), $folderPath."/"."_recycleBin/". $file->getFilename());
 	}
