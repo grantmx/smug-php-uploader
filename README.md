@@ -1,7 +1,5 @@
 # smug-php-uploader BETA
-SmugMug PHP Uploder Code for Photo Booths
-
-This is totally BETA and super sipmle in it's approach.
+SmugMug PHP Uploder Code for Photo Booths. This is totally BETA and super sipmle in it's approach.
 
 In both the index.php and upload.php you'll need to replace:
  * <API KEY> with one provided by SmugMug: http://www.smugmug.com/hack/apikeys 
