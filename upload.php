@@ -116,7 +116,7 @@ catch ( Exception $e ) {
 	</div>
 
 <script>
-!function(){
+!function (document){
 	var timeSpan = document.getElementById("timeLeft"),
 		interval,
 		counter = 30;
@@ -131,7 +131,7 @@ catch ( Exception $e ) {
 		}
 
 	},1000);
-}();
+}(document);
 </script>
 </body>
 </html>

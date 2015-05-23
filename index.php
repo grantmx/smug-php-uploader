@@ -95,10 +95,6 @@ try {
 	
 	// Get list of  albums
 	$albums = $f->albums_get();
-
-	// Get list of images and other useful information
-	// $images = $f->images_get( "AlbumID={$albums['0']['id']}", "AlbumKey={$albums['0']['Key']}", "Heavy=1" );
-	// $images = ( $f->APIVer == "1.2.2" ) ? $images['Images'] : $images;
 	
 	// prints the most recent album id used for uploading
 	echo '<ul class="unstyled inline grid album-scroll top-line grey-line">';
@@ -106,9 +102,6 @@ try {
 		echo '<li class="span-1-6 c"><label for="'.$albums[$key]['id'].'"> <input ng-model="albumID" type="radio" name="albums" id="'.$albums[$key]['id'].'" ng-value="'.$albums[$key]['id'].'"> <br> <strong>'.$albums[$key]['Title'].'</strong> <br> '.$albums[$key]['id'].' </label></li>';
 	}
 	echo '</ul>';
-
-	// need to find a way to list out all the existing albums and their ids so we can choose an id.
-
 }
 catch ( Exception $e ) {
 	echo "{$e->getMessage()} (Error Code: {$e->getCode()})";
