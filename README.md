@@ -6,6 +6,4 @@ In both the index.php and upload.php you'll need to replace:
 * < EMAILADDRESS > with your email address
 * < PASSWORD > with your SmugMug password
  
- Also, this will need to be placed on a local server that supports PHP and is internet connected. Nothing new.
- 
- Further directory setup instructions are in the php pages.
+ Also, this will need to be placed on a local server that supports PHP and is internet connected. Nothing new. Further directory setup instructions are in the php pages.
